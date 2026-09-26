@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Salat</title>
+  <style>
+    body {
+      background-color: #ffffff;
+      color: #1f2937;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.65;
+      margin: 0;
+      padding: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    header {
+      border-bottom: 1px solid #e5e7eb;
+      padding-bottom: 20px;
+      margin-bottom: 32px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #111827;
+      margin: 0 0 8px 0;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: #4b5563;
+      margin: 0;
+    }
+
+    h2 {
+      font-size: 19px;
+      font-weight: 600;
+      color: #111827;
+      margin: 32px 0 12px 0;
+      padding-top: 8px;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #111827;
+      margin: 20px 0 8px 0;
+    }
+
+    p {
+      margin: 0 0 14px 0;
+      color: #374151;
+    }
+
+    ul, ol {
+      margin: 0 0 16px 0;
+      padding-left: 24px;
+      color: #374151;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px 0;
+      font-size: 14px;
+    }
+
+    th, td {
+      border: 1px solid #d1d5db;
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f9fafb;
+      font-weight: 600;
+      color: #111827;
+    }
+
+    td {
+      color: #374151;
+    }
+
+    code {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+      background-color: #f3f4f6;
+      padding: 2px 5px;
+      border-radius: 4px;
+      color: #111827;
+    }
+
+    a {
+      color: #2563eb;
+      text-decoration: underline;
+    }
+
+    a:hover {
+      color: #1d4ed8;
+    }
+
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e5e7eb;
+      font-size: 13px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+
+  <main class="container">
+    <header>
+      <h1>Privacy Policy</h1>
+      <p class="meta">
+        <strong>Application:</strong> Salat<br />
+        <strong>Developer:</strong> SA Mobile Labs<br />
+        <strong>Effective Date:</strong> September 26, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> September 26, 2026
+      </p>
+    </header>
+
+    <section>
+      <h2>1. Introduction</h2>
+      <p>
+        SA Mobile Labs ("we," "our," or "us") operates the <strong>Salat</strong> mobile application for Android (the "App"). This Privacy Policy explains how information is collected, used, stored, and disclosed when you install and use the App, as well as the choices and privacy rights available to you under applicable data protection laws, including the EU/UK General Data Protection Regulation (GDPR), the California Consumer Privacy Act (CCPA/CPRA), and Google Play Developer Program Policies.
+      </p>
+      <p>
+        By downloading or using the App, you agree to the practices described in this Privacy Policy.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Information We Collect and How We Use It</h2>
+      <p>
+        Salat does not require you to register an account, log in, or provide your email address, phone number, or real identity to use any feature of the App.
+      </p>
+
+      <h3>2.1 Information Stored Locally on Your Device</h3>
+      <p>
+        The following preferences and usage records are stored locally within your Android device's private application storage (using Android Jetpack DataStore and local SQLite databases) and are never transmitted to any server operated by SA Mobile Labs:
+      </p>
+      <ul>
+        <li><strong>Display Name:</strong> An optional first or display name you may enter during onboarding to personalize your in-app greeting.</li>
+        <li><strong>Prayer Calculation Settings:</strong> Your selected calculation authority (e.g., Muslim World League, ISNA, Umm al-Qura), juristic method (Shafi'i or Hanafi), high-latitude rule, and Hijri calendar adjustment.</li>
+        <li><strong>Prayer Logs and Notification Preferences:</strong> Daily prayer tracking records and per-prayer Azan/notification alarm toggles.</li>
+        <li><strong>Quran and Hadith Activity:</strong> Your last-read Surah and Ayah, preferred Quran audio reciter, and selected Hadith translation language.</li>
+      </ul>
+
+      <h3>2.2 Location Information (<code>ACCESS_FINE_LOCATION</code> &amp; <code>ACCESS_COARSE_LOCATION</code>)</h3>
+      <p>
+        Islamic prayer times and Qibla direction depend on geographic coordinates. When you grant location permission to the App, your device's latitude and longitude are used strictly for the following purposes:
+      </p>
+      <ul>
+        <li><strong>Prayer Time Calculation &amp; Qibla Direction:</strong> Coordinates are processed locally on your device using an offline astronomical calculation library to compute daily prayer times (Fajr, Sunrise, Dhuhr, Asr, Maghrib, and Isha) and the compass bearing toward the Kaaba in Makkah.</li>
+        <li><strong>City &amp; Country Display:</strong> Coordinates are passed to the Android system geocoder to display your current city and country name on the home screen.</li>
+        <li><strong>Nearby Mosques Search:</strong> When you open the Sacred Places (Mosques) feature, your coordinates are sent over an encrypted HTTPS connection to query nearby mosques in your area via Google Places API and OpenStreetMap Overpass API.</li>
+        <li><strong>Daily Alarm Scheduling:</strong> Your most recent coordinates are saved locally on your device so background tasks can recalculate the next day's prayer times and schedule alarms automatically at midnight.</li>
+      </ul>
+      <p>
+        We do not maintain any proprietary server that tracks, stores, or profiles your location history. You can revoke location access at any time through your Android device settings (<strong>Settings &rarr; Apps &rarr; Salat &rarr; Permissions &rarr; Location</strong>).
+      </p>
+
+      <h3>2.3 Device Permissions and Hardware Sensors</h3>
+      <ul>
+        <li><strong>Motion &amp; Compass Sensors (Magnetometer and Accelerometer):</strong> Used in real time only while viewing the Qibla Compass screen to orient the compass needle and detect magnetic interference. Sensor data is never recorded or transmitted off your device.</li>
+        <li><strong>Notifications &amp; Exact Alarms (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>):</strong> Used solely to deliver timely prayer notifications and re-arm scheduled alarms after a device reboot or app update.</li>
+        <li><strong>Foreground Audio Playback (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>):</strong> Used to continue streaming Quran audio recitations or playing Azan alerts while your screen is locked or the App is in the background.</li>
+        <li><strong>Storage Permission on Older Android Versions (<code>WRITE_EXTERNAL_STORAGE</code>, API 28 and below):</strong> On Android 8.0 to 9.0, storage permission is requested only when you tap the "Save" button to save a shareable Hadith image card into your device's <code>Pictures/Salat</code> folder. On Android 10 and above, images are saved without storage permission using Android Scoped Storage (<code>MediaStore</code>). The App never reads or accesses your personal photos or files.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Third-Party Services and SDKs</h2>
+      <p>
+        The App integrates third-party Software Development Kits (SDKs) and content APIs to provide core functionality, diagnose crashes, and display advertisements. These third-party providers may collect and process limited device information as governed by their respective privacy policies:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Service / SDK</th>
+            <th>Provider</th>
+            <th>Data Collected / Processed</th>
+            <th>Purpose</th>
+            <th>Privacy Policy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Google AdMob &amp; User Messaging Platform (UMP)</td>
+            <td>Google LLC</td>
+            <td>Advertising ID (AAID), IP address (coarse location), device information, ad interaction data, consent status</td>
+            <td>Displaying Banner, Native, Interstitial, and App Open ads; frequency capping; managing GDPR/CCPA consent</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>Firebase Crashlytics</td>
+            <td>Google LLC</td>
+            <td>Crash stack traces, device model, OS version, Crashlytics Installation UUID</td>
+            <td>Detecting and fixing application crashes and stability issues</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
+          </tr>
+          <tr>
+            <td>Firebase Analytics &amp; Remote Config</td>
+            <td>Google LLC</td>
+            <td>App instance ID, aggregated screen views, feature interaction events, app version</td>
+            <td>Understanding aggregated app usage and delivering remote configuration parameters</td>
+            <td><a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy</a></td>
+          </tr>
+          <tr>
+            <td>Google Play Services Location &amp; Places API</td>
+            <td>Google LLC</td>
+            <td>Geographic coordinates, GPS/network signals</td>
+            <td>Resolving device location and finding nearby mosques</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a></td>
+          </tr>
+          <tr>
+            <td>OpenStreetMap Overpass API &amp; Content CDNs</td>
+            <td>OpenStreetMap Foundation / Islamic Network / jsDelivr</td>
+            <td>Standard HTTP request headers, IP address, search coordinates</td>
+            <td>Querying nearby mosques, streaming Quran audio recitations, and fetching Hadith translations</td>
+            <td><a href="https://osmfoundation.org/wiki/Privacy_Policy" target="_blank" rel="noopener">OSMF Privacy Policy</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>4. Google Play Data Safety Disclosure</h2>
+      <p>
+        In accordance with Google Play Store requirements, the table below summarizes the data types collected and shared through the App and its integrated SDKs:
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>Data Category</th>
+            <th>Collected</th>
+            <th>Shared with Third Parties</th>
+            <th>Purpose &amp; Handling</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Precise &amp; Approximate Location</td>
+            <td>Yes</td>
+            <td>Yes (Places / Overpass API lookup)</td>
+            <td>Encrypted in transit. Used strictly for App Functionality (Prayer Times, Qibla Compass, Nearby Mosques).</td>
+          </tr>
+          <tr>
+            <td>Crash Logs &amp; Diagnostics</td>
+            <td>Yes</td>
+            <td>Yes (Firebase Crashlytics)</td>
+            <td>Encrypted in transit. Used for Analytics and App Stability.</td>
+          </tr>
+          <tr>
+            <td>App Interactions</td>
+            <td>Yes</td>
+            <td>Yes (Firebase Analytics)</td>
+            <td>Encrypted in transit. Used for aggregated Analytics.</td>
+          </tr>
+          <tr>
+            <td>Device or Other IDs (Advertising ID)</td>
+            <td>Yes</td>
+            <td>Yes (Google AdMob &amp; Firebase)</td>
+            <td>Encrypted in transit. Used for Advertising/Marketing, Analytics, and Fraud Prevention.</td>
+          </tr>
+          <tr>
+            <td>Personal Identifiers (Name, Email, Phone, Contacts)</td>
+            <td>No</td>
+            <td>No</td>
+            <td>Not collected or shared. Any optional display name entered in the App remains exclusively on your device.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>5. Advertising and Your Choices</h2>
+      <p>
+        We use Google AdMob to display advertisements within the App. For users in the European Economic Area (EEA), the United Kingdom, and Switzerland, we use Google's User Messaging Platform (UMP) SDK to request your consent prior to serving personalized ads.
+      </p>
+      <p>
+        You can opt out of personalized advertising or delete your Google Advertising ID at any time in your Android device settings by navigating to <strong>Settings &rarr; Google &rarr; All services &rarr; Ads</strong> and selecting <strong>Delete advertising ID</strong> or <strong>Opt out of Ads Personalization</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Legal Bases for Processing (EEA / UK Users)</h2>
+      <p>
+        If you reside in the European Economic Area or the United Kingdom, we process your information under the following legal bases under the GDPR:
+      </p>
+      <ul>
+        <li><strong>Performance of a Service (Article 6(1)(b)):</strong> Processing your device location (when granted) to compute prayer times, Qibla direction, and nearby mosques.</li>
+        <li><strong>Consent (Article 6(1)(a)):</strong> Accessing optional runtime device permissions (Location, Notifications) and serving personalized advertisements via the Google UMP consent dialog. You may withdraw your consent at any time.</li>
+        <li><strong>Legitimate Interests (Article 6(1)(f)):</strong> Monitoring application stability and crash diagnostics via Firebase Crashlytics, analyzing aggregated usage metrics, and displaying non-personalized advertisements.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>7. Data Retention and Deletion Rights (GDPR &amp; CCPA/CPRA)</h2>
+      <ul>
+        <li><strong>Deleting On-Device Data:</strong> Because we do not maintain user accounts or store personal profiles on external servers, all personal settings and prayer logs reside locally on your device. You can permanently delete all local data at any time by going to <strong>Android Settings &rarr; Apps &rarr; Salat &rarr; Storage &amp; cache &rarr; Clear storage</strong>, or by uninstalling the App.</li>
+        <li><strong>Third-Party Diagnostic &amp; Analytics Data:</strong> Crash logs and analytics identifiers collected by Google Firebase are retained according to Google's standard retention policies (typically 90 days for Crashlytics data and up to 14 months for Analytics data) and then automatically deleted.</li>
+        <li><strong>California Privacy Rights (CCPA/CPRA):</strong> We do not sell your personal information. To opt out of the sharing of device advertising identifiers with Google AdMob for cross-context behavioral advertising, you may delete or reset your Advertising ID in your Android settings as described in Section 5.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Data Security</h2>
+      <p>
+        All network communications between the App and external endpoints (including Google AdMob, Firebase, Google Places API, Hadith API, and Quran Audio CDNs) are encrypted in transit using HTTPS / Transport Layer Security (TLS).
+      </p>
+    </section>
+
+    <section>
+      <h2>9. Children's Privacy</h2>
+      <p>
+        The App is intended for general audiences aged 13 and older (or the applicable minimum age of digital consent in your country). We do not knowingly collect personal information from children under the age of 13. If you are a parent or guardian and believe a child under 13 has provided personal information to us, please contact us at the email address below so we can take appropriate action.
+      </p>
+    </section>
+
+    <section>
+      <h2>10. Changes to This Privacy Policy</h2>
+      <p>
+        We may update this Privacy Policy from time to time to reflect changes in the App or applicable laws. Any updates will be posted on this page with an updated "Last Updated" date.
+      </p>
+    </section>
+
+    <section>
+      <h2>11. Contact Us</h2>
+      <p>
+        If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
+      </p>
+      <p>
+        <strong>Developer / Publisher:</strong> SA Mobile Labs<br />
+        <strong>Application:</strong> Salat<br />
+        <strong>Email:</strong> <a href="mailto:samobilelabs@gmail.com">samobilelabs@gmail.com</a>
+      </p>
+    </section>
+
+    <footer>
+      &copy; 2026 SA Mobile Labs. All rights reserved.
+    </footer>
+  </main>
+
+</body>
+</html>
