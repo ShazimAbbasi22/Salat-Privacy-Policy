@@ -130,7 +130,7 @@
       <p class="meta">
         <strong>Application:</strong> Salat<br />
         <strong>Developer:</strong> SA Mobile Labs<br />
-        <strong>Effective Date:</strong> September 26, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> September 26, 2026
+        <strong>Effective Date:</strong> September 26, 2026 &nbsp;|&nbsp; <strong>Last Updated:</strong> September 27, 2026
       </p>
     </header>
 
@@ -178,8 +178,7 @@
       <h3>2.3 Device Permissions and Hardware Sensors</h3>
       <ul>
         <li><strong>Motion &amp; Compass Sensors (Magnetometer and Accelerometer):</strong> Used in real time only while viewing the Qibla Compass screen to orient the compass needle and detect magnetic interference. Sensor data is never recorded or transmitted off your device.</li>
-        <li><strong>Notifications &amp; Exact Alarms (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>, <code>USE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>):</strong> Used solely to deliver timely prayer notifications and re-arm scheduled alarms after a device reboot or app update.</li>
-        <li><strong>Foreground Audio Playback (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_MEDIA_PLAYBACK</code>):</strong> Used to continue streaming Quran audio recitations or playing Azan alerts while your screen is locked or the App is in the background.</li>
+        <li><strong>Notifications &amp; Exact Alarms (<code>POST_NOTIFICATIONS</code>, <code>SCHEDULE_EXACT_ALARM</code>, <code>RECEIVE_BOOT_COMPLETED</code>, <code>REQUEST_IGNORE_BATTERY_OPTIMIZATIONS</code>):</strong> Used solely to deliver timely prayer notifications and re-arm scheduled alarms after a device reboot or app update.</li>
         <li><strong>Storage Permission on Older Android Versions (<code>WRITE_EXTERNAL_STORAGE</code>, API 28 and below):</strong> On Android 8.0 to 9.0, storage permission is requested only when you tap the "Save" button to save a shareable Hadith image card into your device's <code>Pictures/Salat</code> folder. On Android 10 and above, images are saved without storage permission using Android Scoped Storage (<code>MediaStore</code>). The App never reads or accesses your personal photos or files.</li>
       </ul>
     </section>
